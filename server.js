@@ -13,12 +13,16 @@ app.use(express.json());
 let data = {};
 
 function fetchstats() {
-  fetch(url, settings)
-    .then((res) => res.json())
-    .then((json) => {
-      console.log(json);
-      data = json;
-    });
+  try {
+    fetch(url, settings)
+      .then((res) => res.json())
+      .then((json) => {
+        console.log(json);
+        data = json;
+      });
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 app.get("/data", (req, res) => {
