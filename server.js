@@ -3,7 +3,7 @@ const cors = require("cors");
 const app = express();
 const fetch = require("node-fetch");
 
-let url = "https://pv.janphilipps.xyz/cm?cmnd=status%208";
+let url = "https://pv-data.janphilipps.xyz/cm?cmnd=status%208";
 
 let settings = { method: "Get" };
 
