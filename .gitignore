@@ -7,7 +7,7 @@
 *.o
 *.so
 
-*.env
+.env
 
 # Packages #
 ############
